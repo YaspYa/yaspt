@@ -95,6 +95,7 @@ def minus_points (warnings_remainning,guess_remaining):
 
 
 def hangman(secret_word):
+    letters_guessed = []
     guess_remaining = 6
     warnings_remainning = 3
 
@@ -164,6 +165,7 @@ def show_possible_matches(my_word):
 
 
 def hangman_with_hints(secret_word):
+    letters_guessed = []
     guess_remaining = 6
     warnings_remainning = 3
 
@@ -215,8 +217,6 @@ def hangman_with_hints(secret_word):
 
 
 if __name__ == "__main__":
-    #secret_word = choose_word(wordlist)
-    secret_word = 'apple'
-    letters_guessed = []
+    secret_word = choose_word(wordlist)
     #hangman(secret_word)
     hangman_with_hints(secret_word)

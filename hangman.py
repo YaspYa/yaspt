@@ -103,7 +103,7 @@ def hangman(secret_word):
     print('-'*13)
 
     while guess_remaining != 0:
-      print(f'You have {guess_remaining} left.')
+      print(f'You have {guess_remaining} guesses left.')
       print(f'Available letters: {get_available_letters(letters_guessed)}')
       reaction = 'Good guess:'
       input_letter = input('Please guess a letter: ').lower()
@@ -173,7 +173,7 @@ def hangman_with_hints(secret_word):
     print('-'*13)
 
     while guess_remaining != 0:
-      print(f'You have {guess_remaining} left.')
+      print(f'You have {guess_remaining} guesses left.')
       print(f'Available letters: {get_available_letters(letters_guessed)}')
       reaction = 'Good guess:'
       input_letter = input('Please guess a letter: ').lower()
